@@ -1,0 +1,12 @@
+<h3>Current player: {{ current_player }}</h3>
+<h3>Winner: {{ winner }}</h3>
+<h3><button (click)="restart()">Restart</button></h3>
+<table>
+  <tr *ngFor="let row of board; let i = index">
+    <td *ngFor="let col of row; let j = index">
+      <button [disabled]="isBtnDisabled" class="board" (click)="play(i, j)">
+        {{ col }}
+      </button>
+    </td>
+  </tr>
+</table>
