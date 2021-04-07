@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+app-tictactoe table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+app-tictactoe td {
+  border: 2px solid black;
+  height: 2rem;
+  width: 2rem;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+
+.board {
+  border: none;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
