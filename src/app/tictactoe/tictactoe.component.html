@@ -1,5 +1,5 @@
 <h3>Current player: {{ current_player }}</h3>
-<h3>Winner: {{ winner }}</h3>
+<h3 *ngIf="winner != '?'">Winner: {{ winner }}</h3>
 <h3><button (click)="restart()">Restart</button></h3>
 <table>
   <tr *ngFor="let row of board; let i = index">
